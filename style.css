@@ -74,6 +74,7 @@ input:focus {
 }
 
 .error-text {
+  display: inline-block;
   font-size: 0.7rem;
   font-weight: 500;
   color: rgb(255, 51, 51); 
