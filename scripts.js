@@ -22,4 +22,46 @@ const confirmPasswordError = document.querySelector('.error-text__confirmPasswor
 
 signUpBtn.addEventListener('click', (e) => {
     e.preventDefault();
+
+    if (firstName.value.trim() === '') {
+        firstNameError.innerHTML = 'Please enter your first name';
+    } else {
+        firstNameError.innerHTML = '';
+    }
+
+    if (lastName.value.trim() === '') {
+        lastNameError.innerHTML = 'Please enter your last name';
+    } else {
+        lastNameError.innerHTML = '';
+    }
+
+    if (dateOfBirth.value.trim() === '') {
+        dateOfBirthError.innerHTML = 'Please enter your date of birth';
+    } else {
+        dateOfBirthError.innerHTML = '';
+    }
+
+    if (email.value.trim() === '') {
+        emailError.innerHTML = 'Please enter your date of birth';
+    } else {
+        emailError.innerHTML = '';
+    }
+
+    if (username.value.trim() === '') {
+        usernameNameError.innerHTML = 'Please enter your date of birth';
+    } else {
+        usernameNameError.innerHTML = '';
+    }
+
+    if (password.value.trim() === '') {
+        passwordError.innerHTML = 'Please enter your date of birth';
+    } else {
+        passwordError.innerHTML = '';
+    }
+
+    if (confirmPassword.value.trim() === '') {
+        confirmPasswordError.innerHTML = 'Please enter your date of birth';
+    } else {
+        confirmPasswordError.innerHTML = '';
+    }
 });
