@@ -12,48 +12,55 @@
       <div class="sign-up-wrapper">
         <h1>Create Your Account</h1>
         <div class="form-container">
-          <form action="#" method="POST">
+          <form action="#" method="POST" novalidate>
             <div class="input-field">
               <label for="firstName">First name:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__first-name"></span>
               <input type="text" name="firstName" id="firstName" />
             </div>
             <div class="input-field">
               <label for="lastName">Last name:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__last-name"></span>
               <input type="text" name="lastName" id="lastName" />
             </div>
             <div class="input-field">
               <label for="dateOfBirth">Date of birth:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__dateOfBirth"></span>
               <input type="date" name="dateOfBirth" id="dateOfBirth" />
             </div>
             <div class="input-field">
               <label for="email">Email address:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__email"></span>
               <input type="email" name="email" id="email" />
             </div>
             <div class="input-field">
               <label for="username">Username:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__username"></span>
               <input type="text" name="username" id="username" />
             </div>
             <div class="input-field">
               <label for="password">Password:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__password"></span>
               <input type="password" name="password" id="password" />
             </div>
             <div class="input-field">
               <label for="confirmPassword">Confirm password:</label>
+              <span class="required-symbol">*</span>
+              <span class="error-text error-text__confirmPassword"></span>
               <input
                 type="password"
                 name="confirmPassword"
                 id="confirmPassword"
               />
             </div>
-            <div class="input-field">
-              <label for="confirmPassword">Confirm password:</label>
-              <input
-                type="password"
-                name="confirmPassword"
-                id="confirmPassword"
-              />
-            </div>
-            <button class="btn">SIGN UP</button>
+            <p class="required-text">* This is a required field and must be filled in.</p>
+            <button class="submit-btn" type="submit">SIGN UP</button>
           </form>
         </div>
       </div>
