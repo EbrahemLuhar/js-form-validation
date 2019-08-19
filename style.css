@@ -200,3 +200,14 @@ select:-webkit-autofill:focus {
   letter-spacing: 1px;
   font-weight: 400;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+
+  .sign-up-wrapper {
+    width: 100%;
+    padding: 40px 20px;
+  }
+}
